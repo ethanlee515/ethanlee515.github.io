@@ -4,6 +4,10 @@ body {
 	font-family: sans-serif;
 }
 
+html {
+	cursor: url(laser-pointer.png), auto;
+}
+
 .slide-title {
 	font-size: 50px;
 	margin: 45px 0;

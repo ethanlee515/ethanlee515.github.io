@@ -23,26 +23,26 @@
 		<script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 		<script src="./q-pres.js"></script>
-		<script src="./swia.js"></script>
+		<script src="./summary.js"></script>
 	</head>
 	<body>
-		<section class="slide-title">
-			Security with Identifiable Abort
+		<section class="slide-title">Summary</section>
+
+		<section class="slide-item">
+			We construct (the first) multiparty quantum computation protocol
+			with identifiable abort.
 		</section>
+
 		<section class="slide-content slide-item" data-visible-from="1">
-			On abort, everyone knows who to blame.
+			Open problems:
 		</section>
-		<section class="slide-content slide-item" data-visible-from="2">
-			Introduced by [IOZ14].
+		<section class="slide-content slide-sub-item" data-visible-from="1">
+			Require more dishonest parties to cause an abort.
 		</section>
-		<section class="slide-content slide-item" data-visible-from="3">
-			<b>Classically:</b> Satisfied by [GMW87] protocol
-			<span class="slide-content" data-visible-from="4">
-				using <i>broadcast</i> and <i>zk-proofs</i>.
-			</span>
+		<section class="slide-content slide-sub-item" data-visible-from="2">
+			Possibilities for constant round multiparty quantum computation with identifiable abort?
 		</section>
-		<section class="slide-content slide-item" data-visible-from="5">
-			<b>Quantum:</b> Unclear how to achieve from existing constructions [DNS12, DGJ+20].
-		</section>
+
 	</body>
 </html>
+

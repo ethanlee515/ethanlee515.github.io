@@ -17,8 +17,6 @@ function getPacketRads() {
 function drawPacketAt(canvas, x, y, color) {
 	if(!color)
 		color = "#000";
-	else
-		console.log("custom colored packet found");
 
 	let [packetRadX, packetRadY] = getPacketRads();
 	let ctx = canvas[0].getContext("2d");
@@ -27,10 +25,8 @@ function drawPacketAt(canvas, x, y, color) {
 	ctx.beginPath();
 	//To upper left corner
 	ctx.moveTo(x - packetRadX, y - packetRadY);
-	//To top of packet
-	ctx.lineTo(x, y - packetRadY);
 	//Upper right line
-	ctx.lineTo(x + packetRadX, y - packetRadY + packetRadX);
+	ctx.lineTo(x + packetRadX, y - packetRadY + 2 * packetRadX);
 	//To bottom right corner
 	ctx.lineTo(x + packetRadX, y + packetRadY);
 	//To bottom left corner
@@ -342,32 +338,32 @@ function nextSlide() {
 			break;
 		}
 		/* Back to path 3 */
-		case 14: {
+		case 15: {
 			let canvas = container.find("canvas");
 			removeReceivedECC(canvas);
 			drawX(canvas, 3, 2);
 			break;
 		}
-		case 15: {
+		case 16: {
 			let canvas = container.find("canvas");
 			eraseLineBetweenParties(canvas, 1, 4);
 			drawLineBetweenParties(4, 2, canvas, false, "#000");
 			break;
 		}
 		/* Path 4 */
-		case 16: {
+		case 17: {
 			let canvas = container.find("canvas");
 			drawLineBetweenParties(1, 3, canvas, false, "#0C0");
 			drawLineBetweenParties(3, 4, canvas, false, "#0C0");
 			drawLineBetweenParties(4, 2, canvas, false, "#0C0");
 			break;
 		}
-		case 17: {
+		case 18: {
 			let canvas = container.find("canvas");
 			drawX(canvas, 3, 4);
 			break;
 		}
-		case 18: {
+		case 19: {
 			let canvas = container.find("canvas");
 			eraseLineBetweenParties(canvas, 3, 4);
 			drawLineBetweenParties(1, 3, canvas, false, "#000");
@@ -375,7 +371,7 @@ function nextSlide() {
 			break;
 		}
 		/* SWIA */
-		case 19: {
+		case 20: {
 			let canvas = container.find("canvas");
 			let canvasWidth = canvas.width();
 			let canvasHeight = canvas.height();
@@ -428,12 +424,9 @@ function nextSlide() {
 			MathJax.typeset();
 			break;
 		}
-		case 20: {
-			location.href = "strategy.html";
+		case 25: {
+			location.href = "strategy-typical.html";
 			break;
 		}
 	}
-
-
-
 }

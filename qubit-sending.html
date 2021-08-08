@@ -35,13 +35,13 @@
 		</section>
 
 		<section class="slide-content slide-item" data-visible-from="1">
-		Malicious $P_i$'s can:
+			We limit the adversary to:
 		</section>
 		<section class="slide-content slide-sub-item" data-visible-from="1">
-			Drop outgoing messages
+			Drop outgoing messages.
 		</section>
 		<section class="slide-content slide-sub-item" data-visible-from="2">
-			Drop incoming messages
+			Claim message wasn't sent.
 		</section>
 
 		<hr class="slide-content" data-visible-from="3">
@@ -51,18 +51,31 @@
 		</section>
 
 		<section class="slide-content slide-sub-item" data-visible-from="4">
-			Packets: Error-correcting code
+			Packets: Quantum error-correcting code
 		</section>
 
-		<section class="slide-content slide-sub-item" data-visible-from="5">
-			Network: Parties
+		<section class="slide-content slide-sub-item" data-visible-from="14">
+			Bound on packet loss: number of edges.
 		</section>
 
-		<section class="slide-content slide-sub-item" data-visible-from="13">
-			Bound on packet loss:
-			$n_{drop} &lt; E = \frac{n(n+1)}{2}$
+		<section class="slide-content slide-item" data-visible-from="20">
+			We can identify the cheater!
 		</section>
 
+		<section class="slide-content slide-sub-item" data-visible-from="21">
+			Graph is disconnected on abort.
+		</section>
 
+		<section class="slide-content slide-sub-item" data-visible-from="22">
+			Edges never break between honest parties.
+		</section>
+
+		<section class="slide-content slide-sub-item" data-visible-from="23">
+			$\implies$ Honest parties are on the same connected component.
+		</section>
+
+		<section class="slide-content slide-item" data-visible-from="24">
+			General adversary behavior $\rightarrow$ use authentication code.
+		</section>
 	</body>
 </html>
