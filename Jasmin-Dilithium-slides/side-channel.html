@@ -5,33 +5,30 @@
 		<link rel="stylesheet" href="./q-pres.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 		<script src="./q-pres.js"></script>
-		<script src="./signatures.js"></script>
+		<script src="./side-channel.js"></script>
 	</head>
 	<body>
-		<section class="slide-title">Man-in-the-middle</section>
+		<section class="slide-title">Side channel attacks</section>
 
 		<section class="slide-item">
-			Stereotypical example: online shopping
+			Challenge: timing attacks
 		</section>
 
 		<section class="slide-content slide-item" data-visible-from="1">
-			Goal: Steal credit card information
+			Dilithium signature involves <i>rejection sampling</i>.
 		</section>
 
 		<section class="slide-content slide-item" data-visible-from="2">
-			Eavesdropping isn't enough - message is encrypted.
+			If the signature doesn't "look good", then restart.
 		</section>
 
 		<section class="slide-content slide-item" data-visible-from="3">
-			<i>DNS poisoning</i> attack
+			Adversary can guess how many restarts were required.
 		</section>
 		
 		<section class="slide-content slide-item" data-visible-from="4">
-			How to mitigate this attack?
+			Goal: Prove that number of restarts is independent of signing key.
 		</section>
 		
-		<section class="slide-content slide-item" data-visible-from="5">
-			Encryption isn't enough - need to break symmetry.
-		</section>
 	</body>
 </html>

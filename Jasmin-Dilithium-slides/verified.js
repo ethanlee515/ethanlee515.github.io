@@ -1,7 +1,7 @@
 function nextSlide() {
 	switch(currentSlide) {
-		case 5: {
-			location.href = "methodology.html";
+		case 4: {
+			location.href = "goals.html";
 			break;
 		}
 	}

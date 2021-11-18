@@ -1,7 +1,7 @@
 function nextSlide() {
 	switch(currentSlide) {
-		case 6: {
-			location.href = "https-construction.html";
+		case 2: {
+			location.href = "jasmin.html";
 			break;
 		}
 	}
