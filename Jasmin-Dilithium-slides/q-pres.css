@@ -56,3 +56,13 @@ ol {
 code {
 	background-color: #DDD;
 }
+
+.methodology-illustration {
+	position: absolute;
+	width: 85%;
+	top: 5%;
+	left: 0;
+	right: 0;
+	margin-left: auto;
+	margin-right: auto;
+}

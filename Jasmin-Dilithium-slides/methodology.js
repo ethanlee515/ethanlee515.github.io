@@ -1,6 +1,6 @@
 function nextSlide() {
 	switch(currentSlide) {
-		case 2: {
+		case 5: {
 			location.href = "jasmin.html";
 			break;
 		}
