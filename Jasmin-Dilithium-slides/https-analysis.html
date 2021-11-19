@@ -5,79 +5,68 @@
 		<link rel="stylesheet" href="./q-pres.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 		<script src="./q-pres.js"></script>
-		<script src="./https.js"></script>
+		<script src="./https-analysis.js"></script>
 	</head>
 	<body>
-		<section class="slide-title">HTTPS construction</section>
+		<section class="slide-title">HTTPS analysis</section>
 
 		<section class="slide-item">
-			Break symmetry using
-			<a href="https://ccadb-public.secure.force.com/microsoft/IncludedCACertificateReportForMSFT">
-				certificate authorities</a>.
+			Client expects an encryption key.
 		</section>
 
 		<section class="slide-content slide-item" data-visible-from="1">
-			Preparation (when setting up website):
+			Option 1: generate fresh keys
 		</section>
 
 		<section class="slide-content slide-sub-item" data-visible-from="2">
-			Generate encryption and decryption keys.
+			Can't forge signature
 		</section>
 
 		<section class="slide-content slide-sub-item" data-visible-from="3">
-			Let CA sign encryption key.
+			Client rejects
 		</section>
 
-		<section class="slide-content slide-item" data-visible-from="6">
-			For each client:
+		<section class="slide-content slide-item" data-visible-from="4">
+			Option 2: send real key
 		</section>
 
-		<section class="slide-content slide-sub-item" data-visible-from="7">
-			Send signed encryption key to client
+		<section class="slide-content slide-sub-item" data-visible-from="5">
+			Client replies with encrypted message
 		</section>
 
-		<section class="slide-content slide-sub-item" data-visible-from="8">
-			Client sends back its message*
+		<section class="slide-content slide-sub-item" data-visible-from="6">
+			Cannot decrypt
 		</section>
 
 		<img class="slide-content illustration"
 			 data-visible-from="0"
-			 data-visible-until="1"
-			 src="img/7.png" />
+			 data-visible-until="0"
+			 src="img/14-0.png" />
 
 		<img class="slide-content illustration"
-			 data-visible-from="2"
+			 data-visible-from="1"
 			 data-visible-until="2"
-			 src="img/8.png" />
+			 src="img/14.png" />
 
 		<img class="slide-content illustration"
 			 data-visible-from="3"
 			 data-visible-until="3"
-			 src="img/9.png" />
+			 src="img/15.png" />
 
 		<img class="slide-content illustration"
 			 data-visible-from="4"
 			 data-visible-until="4"
-			 src="img/10.png" />
+			 src="img/16.png" />
 
 		<img class="slide-content illustration"
 			 data-visible-from="5"
 			 data-visible-until="5"
-			 src="img/11.png" />
+			 src="img/17.png" />
 
 		<img class="slide-content illustration"
 			 data-visible-from="6"
 			 data-visible-until="6"
-			 src="img/11-5.png" />
+			 src="img/18.png" />
 
-		<img class="slide-content illustration"
-			 data-visible-from="7"
-			 data-visible-until="7"
-			 src="img/12.png" />
-
-		<img class="slide-content illustration"
-			 data-visible-from="8"
-			 data-visible-until="8"
-			 src="img/13.png" />
 	</body>
 </html>

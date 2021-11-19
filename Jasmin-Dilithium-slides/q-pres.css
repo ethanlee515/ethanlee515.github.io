@@ -44,3 +44,11 @@ p {
 ol {
 	margin: 0;
 }
+
+.illustration {
+	position: absolute;
+	bottom: 0%;
+	right: 0%;
+	width: 1200px;
+	margin: 10px;
+}

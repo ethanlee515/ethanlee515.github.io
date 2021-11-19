@@ -10,6 +10,7 @@ let complaints = [
 	"Exported functions can't take array arguments",
 	"Convoluted typecast syntax",
 	"Miscompilation",
+	"Can I just write x86 instead?",
 	"Cryptic error messages",
 	"asmgen: not able to assemble address",
 	"asmgen: invalid instruction, check do not pass : MOV_32",
@@ -17,8 +18,8 @@ let complaints = [
 	"error in “one-varmap” checker: modified expression",
 	"Error: operand size mismatch for `movzb'",
 	"Stack smashing detected",
+	"And I thought segfaults were bad",
 	"Compilation takes over a minute",
-	"Can I just write x86 instead?",
 	"Built-in memory checker false positives",
 	"Generated assembly incompatible with Valgrind",
 	"Syntax error in extracted EasyCrypt"
