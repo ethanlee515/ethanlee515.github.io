@@ -8,76 +8,84 @@
 		<script src="./https.js"></script>
 	</head>
 	<body>
-		<section class="slide-title">HTTPS construction</section>
+		<section class="slide-title">HTTPS: construction</section>
 
 		<section class="slide-item">
-			Break symmetry using
-			<a href="https://ccadb-public.secure.force.com/microsoft/IncludedCACertificateReportForMSFT">
-				certificate authorities</a>.
+			Introducing certificate authorities!
 		</section>
 
-		<section class="slide-content slide-item" data-visible-from="1">
-			Preparation (when setting up website):
+		<section class="slide-content slide-sub-item" data-visible-from="1">
+			Treated as trusted third parties
 		</section>
 
 		<section class="slide-content slide-sub-item" data-visible-from="2">
+			Microsoft Windows hard-codes
+			<a href="https://ccadb-public.secure.force.com/microsoft/IncludedCACertificateReportForMSFT">
+				127 of them</a>.
+		</section>
+
+		<section class="slide-content slide-item" data-visible-from="3">
+			Preparation (when setting up website):
+		</section>
+
+		<section class="slide-content slide-sub-item" data-visible-from="4">
 			Generate encryption and decryption keys.
 		</section>
 
-		<section class="slide-content slide-sub-item" data-visible-from="3">
+		<section class="slide-content slide-sub-item" data-visible-from="5">
 			Let CA sign encryption key.
 		</section>
 
-		<section class="slide-content slide-item" data-visible-from="6">
+		<section class="slide-content slide-item" data-visible-from="8">
 			For each client:
 		</section>
 
-		<section class="slide-content slide-sub-item" data-visible-from="7">
+		<section class="slide-content slide-sub-item" data-visible-from="9">
 			Send signed encryption key to client
 		</section>
 
-		<section class="slide-content slide-sub-item" data-visible-from="8">
+		<section class="slide-content slide-sub-item" data-visible-from="10">
 			Client sends back its message*
 		</section>
 
 		<img class="slide-content illustration"
 			 data-visible-from="0"
-			 data-visible-until="1"
-			 src="img/7.png" />
-
-		<img class="slide-content illustration"
-			 data-visible-from="2"
-			 data-visible-until="2"
-			 src="img/8.png" />
-
-		<img class="slide-content illustration"
-			 data-visible-from="3"
 			 data-visible-until="3"
-			 src="img/9.png" />
+			 src="img/7.png" />
 
 		<img class="slide-content illustration"
 			 data-visible-from="4"
 			 data-visible-until="4"
-			 src="img/10.png" />
+			 src="img/8.png" />
 
 		<img class="slide-content illustration"
 			 data-visible-from="5"
 			 data-visible-until="5"
-			 src="img/11.png" />
+			 src="img/9.png" />
 
 		<img class="slide-content illustration"
 			 data-visible-from="6"
 			 data-visible-until="6"
-			 src="img/11-5.png" />
+			 src="img/10.png" />
 
 		<img class="slide-content illustration"
 			 data-visible-from="7"
 			 data-visible-until="7"
-			 src="img/12.png" />
+			 src="img/11.png" />
 
 		<img class="slide-content illustration"
 			 data-visible-from="8"
 			 data-visible-until="8"
+			 src="img/11-5.png" />
+
+		<img class="slide-content illustration"
+			 data-visible-from="9"
+			 data-visible-until="9"
+			 src="img/12.png" />
+
+		<img class="slide-content illustration"
+			 data-visible-from="10"
+			 data-visible-until="10"
 			 src="img/13.png" />
 	</body>
 </html>

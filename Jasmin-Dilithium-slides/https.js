@@ -1,6 +1,6 @@
 function nextSlide() {
 	switch(currentSlide) {
-		case 9: {
+		case 11: {
 			location.href = "https-analysis.html";
 			break;
 		}
