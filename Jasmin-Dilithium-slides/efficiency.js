@@ -1,6 +1,6 @@
 function nextSlide() {
 	switch(currentSlide) {
-		case 4: {
+		case 5: {
 			location.href = "side-channel.html";
 			break;
 		}

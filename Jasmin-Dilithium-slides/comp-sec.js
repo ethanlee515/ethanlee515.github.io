@@ -1,6 +1,6 @@
 function nextSlide() {
 	switch(currentSlide) {
-		case 4: {
+		case 3: {
 			location.href = "func-cor.html";
 			break;
 		}

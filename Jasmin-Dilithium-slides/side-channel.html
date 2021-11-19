@@ -8,26 +8,26 @@
 		<script src="./side-channel.js"></script>
 	</head>
 	<body>
-		<section class="slide-title">Side channel attacks</section>
+		<section class="slide-title">Side Channel Resistance</section>
 
 		<section class="slide-item">
-			Challenge: timing attacks
+			Challenge: <i>timing attack</i>
 		</section>
 
 		<section class="slide-content slide-item" data-visible-from="1">
 			Dilithium signature involves <i>rejection sampling</i>.
 		</section>
 
-		<section class="slide-content slide-item" data-visible-from="2">
+		<section class="slide-content slide-sub-item" data-visible-from="2">
 			If the signature doesn't "look good", then restart.
 		</section>
 
-		<section class="slide-content slide-item" data-visible-from="3">
-			Adversary can guess how many restarts were required.
+		<section class="slide-content slide-sub-item" data-visible-from="3">
+			Adversary can measure number of restarts.
 		</section>
 		
 		<section class="slide-content slide-item" data-visible-from="4">
-			Goal: Prove that number of restarts is independent of signing key.
+			Goal: Prove that number of restarts is independent of secret.
 		</section>
 		
 	</body>

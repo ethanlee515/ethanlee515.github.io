@@ -52,3 +52,7 @@ ol {
 	width: 1200px;
 	margin: 10px;
 }
+
+code {
+	background-color: #DDD;
+}
